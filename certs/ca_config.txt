@@ -1,0 +1,18 @@
+[ req ]
+default_bits       = 2048
+default_md         = sha512
+default_keyfile    = ca.key
+prompt             = no
+encrypt_key        = yes
+
+[ req ]
+prompt                 = no
+distinguished_name     = req_distinguished_name
+
+[ req_distinguished_name ]
+countryName             = CA
+stateOrProvinceName     = Ontario
+localityName            = Locationsville
+organizationName        = Example Ltd
+organizationalUnitName  = PKI
+commonName              = auto-tracing-mutating-webhook.default.svc
